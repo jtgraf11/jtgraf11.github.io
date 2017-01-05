@@ -18,7 +18,7 @@
             font-family: fantasy;
         }
         body{
-                background: linear-gradient(to Right, Green, Blue, Green)
+                background: linear-gradient(to Right, yellow, orange, red)
             }
         h2{
             color: black;
