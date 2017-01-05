@@ -74,9 +74,9 @@ div.desc {
     <div class="container">
   <ul class="nav nav-pills">
     <li class="active"><a data-toggle="pill" href="home">Home</a></li>
-      <li><a data-toggle="pill" href="#menu1">What is a Apple?</a></li>
-    <li><a data-toggle="pill" href="#menu2">How Apples are Made</a></li>
-      <li><a data-toggle="pill" href="#menu3">What are their uses.</a></li>
+      <li><a data-toggle="pill" href="#menu1">What is an Apple?</a></li>
+    <li><a data-toggle="pill" href="#menu2">How Apples are Made.</a></li>
+      <li><a data-toggle="pill" href="#menu3">What are their uses?</a></li>
   </ul>
         <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
@@ -149,7 +149,7 @@ function displayDate() {
         
         <div id="menu2" class="tab-pane fade">
         <center>
-            <h2>How Apples are Made</h2></center>
+            <h2>How Apples are Made.</h2></center>
             <p>Apples are made of "About 10% of an apple is made up of carbohydrate and 4% of an apple is made up from a variety of vitamins and minerals. The rest of the apple, more than 80%, is water. A medium-sized eating apple contains about 40 calories; one Kilogram (2.2 lb) of fresh apples provides approximately 2100kJ (500 kcal) of energy." </p>
             
             
@@ -159,7 +159,7 @@ function displayDate() {
         </div>
             
     <div id="menu3" class="tab-pane fade">
-        <center><h2>What are their uses.</h2>
+        <center><h2>What are their uses?</h2>
         </center>
         <p>Apples are a great natural alternative to processed sugars. In baking, applesauce is a way to get the taste you love with fewer calories. You can also add some sliced apple to your morning (plain) yogurt or smoothie, and skip that sugar-sweetened stuff all together. </p>
     <div class="container">
