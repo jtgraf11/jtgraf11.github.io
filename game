@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+  </head>
+  <body>
+    <script>
+     x=0
+     y=0
+     x1=0
+     y1=0
+     x2=0
+     y2=0
+     var context;
+        var x2=100;
+        var y2=200;
+        var dx=5;
+        var dy=5;
+    var bg;
+    var img;
+    function setup(){
+        background("background1")
+      createCanvas(1500,1000);
+    }function draw(){
+        
+        // Order of code by Layer
+        background("blue");
+        jraf();
+        jraf2();
+        Ball();
+        var words = [ "right", "left", "up", "down"]
+var word = random(words);  // select random word
+//text(word,10,50);
+        if (keyIsDown(87))
+            y2-=4;
+
+          if (keyIsDown(83))
+            y2+=4;
+        
+        if (keyIsDown(38))
+            y1-=4;
+
+          if (keyIsDown(40))
+            y1+=4;
+        
+        if (y>100) {
+            y=-500
+        }
+        if (y<-600) {
+            y=50
+        }
+        if (x<200){
+            x=19
+        }
+         if (y1>100) {
+            y1=-500
+        }
+        if (y1<-600) {
+            y1=50
+        }
+         if (x2>600) {
+            x2=-500
+        }
+        if (y2>100) {
+            y2=-500
+        }
+        if (y2<-600) {
+            y2=50
+        }
+       if (y1==700){
+           y+30
+       }
+        
+        x+=random(-25, 25)
+        y+=random(-15, 15)
+    }
+        
+        
+        function jraf(){
+                          fill(199,62,20)
+            rect(39, 850, 30, 120);
+            rect(229, 850, 30, 120);
+                          fill(150, 130, 0)
+            rect(39, 790, 220, 90);
+                          fill(299,60,0)
+            quad(200, 800, 200, y2+700, 260, y2+700, 260, 800);// Neck
+            quad(260, y2+700, 260, y2+740, 340, y2+720)// Head
+        }
+          function jraf2(){
+              fill(199,62,20)
+                  rect(1239, 850, 30, 120);
+                rect(1429, 850, 30, 120);
+              fill(150, 130, 0)
+                rect(1239, 790, 220, 90);
+              fill(299,60,0)
+                quad(1240, 800, 1240, y1+700, 1280, y1+700, 1280, 800);// Neck
+                            fill(0,0,0)
+                quad(1240, y1+700, 1240, y1+740, 1140, y1+720)// Head, The neck and head will grow then the keys are typed. 
+          }
+        
+        function Ball(){
+            ellipse(x+750, y+600, 60, 60);
+        }
+        
+        
+
+
+
+       
+      </script>
+    </body>
+</html>
